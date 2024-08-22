@@ -1,0 +1,92 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle at top left, #1e2022, #282c34);
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', 'sans-serif';
+            color: #e6e6e6;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background: #333;
+            border-radius: 15px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            animation: fadeInScale 1s ease forwards;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ff8e53, #f06);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textAnimation 2s infinite;
+        }
+     
+
+        .material-icons {
+            vertical-align: middle;
+            font-size: 2.8rem;
+        }
+
+
+        .joke {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            animation: fadeIn 1s ease;
+            min-height: 100px;
+            color: #ff8e53;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background: linear-gradient(90deg, #ff8e53, #f06);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(90deg, #f06, #ff8e53);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 142, 83, 0.5);
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes textAnimation {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
